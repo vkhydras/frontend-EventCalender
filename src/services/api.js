@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://eventcalender-server.onrender.com/',
+  baseURL: 'https://eventcalender-server.onrender.com/api',
   headers: {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`, // Include the token from local storage
