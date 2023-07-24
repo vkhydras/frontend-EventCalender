@@ -7,7 +7,7 @@ const Login = ({ onLogin }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
-    password: '',
+    password: '', // Add the password field
   });
 
   const { email, password } = formData;
@@ -31,10 +31,10 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="container"> {/* Add a class to the main container */}
+    <div className="container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group"> {/* Add a class to the form group */}
+        <div className="form-group">
           <label>Email:</label>
           <input
             type="email"
@@ -44,11 +44,11 @@ const Login = ({ onLogin }) => {
             required
           />
         </div>
-        <div className="form-group"> {/* Add a class to the form group */}
+        <div className="form-group">
           <label>Password:</label>
           <input
             type="password"
-            name="password"
+            name="password" // Ensure that the name attribute is set to "password"
             value={password}
             onChange={handleChange}
             required
