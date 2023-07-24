@@ -20,7 +20,7 @@ const EventDetails = ({ event, onDelete }) => {
   return (
     <div className="event-card">
       <h2>{event.title}</h2>
-      <p>Date: {event.start}</p>
+      <p>Date: {event.date}</p>
       <p>Time: {event.time}</p>
       <p>Location: {event.location}</p>
       <p>Description: {event.description}</p>
